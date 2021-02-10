@@ -3,6 +3,7 @@ import Layout from '../component/Layout';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import Tanks from '../pages/Tanks';
+import Policy from '../pages/Policy';
 
 import TagManager from 'react-gtm-module';
 
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route exact path='/gracias'>
             <Tanks />
+          </Route>
+          <Route exact path='/politica-de-privacidad'>
+            <Policy />
           </Route>
           <Route path='*'>
             <NotFound />

@@ -1,17 +1,17 @@
 .form {
-  background-color: $primary;
+  background-color: $secondary;
   color: white;
 
   a {
-    color: $secondary;
+    // color: $secondary;
   }
   h2,
   h5 {
-    color: white;
     text-align: center;
   }
   h2 {
-    margin-bottom: 8px;
+    color: $secondary;
+    margin-bottom: 20px;
   }
   h5 {
     margin-bottom: 40px;

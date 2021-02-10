@@ -11,7 +11,7 @@ class Form extends Component {
       lname: '',
       email: '',
       phone: '',
-      country: '',
+      state: '',
       location: '',
       policy: '',
       isSending: false,
@@ -57,7 +57,7 @@ class Form extends Component {
     //         lname: '',
     //         email: '',
     //         phone: '',
-    //         country: '',
+    //         state: '',
     //         location: '',
     //         isSended: true,
     //         redirect: true
@@ -92,7 +92,9 @@ class Form extends Component {
         <div className='container'>
           <div className='row justify-content-center'>
             <div className='col-md-8'>
-              <h2>Solicitá más información</h2>
+              <h2>
+                <span>Solicitá más información</span>
+              </h2>
               <h5>
                 Completa el siguiente formulario para conocer más sobre el
                 servicio, nuestros planes y precios.
@@ -150,10 +152,10 @@ class Form extends Component {
                 <div className='row mb-3'>
                   <div className='col-md-6'>
                     <div className='form-group'>
-                      <label htmlFor=''>País</label>
+                      <label htmlFor=''>Provincia</label>
                       <input
                         type='text'
-                        name='country'
+                        name='state'
                         className='form-control form-control-lg'
                         onChange={this.handleChange}
                       />
@@ -190,7 +192,7 @@ class Form extends Component {
                       </label>
                       <div>
                         <a
-                          href='https://www.genganar.com/genganar/politica-de-privacidad/'
+                          href='/politica-de-privacidad'
                           target='_blank'
                           rel='noopener noreferrer'
                         >
@@ -201,12 +203,12 @@ class Form extends Component {
                   </div>
                   <div className='col-md-6'>
                     {this.state.policy ? (
-                      <button className='btn btn-lg btn-warning text-uppercase cta'>
+                      <button className='btn btn-lg btn-warning text-uppercase btn-cta'>
                         Quiero más información
                       </button>
                     ) : (
                       <button
-                        className='btn btn-lg btn-warning text-uppercase cta'
+                        className='btn btn-lg btn-warning text-uppercase btn-cta'
                         disabled
                       >
                         Quiero más información

@@ -1,13 +1,13 @@
 .hero {
   // background-color: $secondary;
-  padding: 120px 0;
-  background-image: url('https://www.genganar.com/genganar/wp-content/uploads/2020/05/DSC_0030.jpg');
+  padding: 170px 0;
+  background-image: url('https://images.unsplash.com/photo-1507637379087-515718ca7c58?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
   background-size: cover;
   background-position: center;
   color: white;
   position: relative;
   .overlay {
-    background-color: rgba(darken($secondary, 45%), 0.8);
+    background-color: rgba(darken($primary, 45%), 0.6);
     position: absolute;
     top: 0;
     width: 100%;
@@ -16,19 +16,21 @@
   .container {
     text-align: center;
     h1 {
-      font-weight: 600;
       margin-bottom: 20px;
       font-size: 3rem;
     }
     .lead {
       margin-bottom: 50px;
       font-size: 1.6rem;
+      b {
+        font-weight: 600;
+        color: $primary;
+      }
     }
-    .cta {
-      padding: 16px 60px;
-      letter-spacing: 0.04rem;
-      //color: white;
-      font-weight: 600;
+    .btn-cta {
+      padding: 12px 60px;
+      letter-spacing: 0.02rem;
+      font-weight: 500;
     }
   }
 }

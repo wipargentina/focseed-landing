@@ -1,7 +1,8 @@
 .navbar {
+  border-bottom: 4px solid $gray-600;
   .navbar-brand {
     img {
-      height: 100px;
+      height: 70px;
     }
   }
 }
@@ -10,7 +11,7 @@
   .navbar {
     .navbar-brand {
       img {
-        height: 70px;
+        height: 50px;
       }
     }
   }

@@ -8,13 +8,11 @@ export default function Hero() {
       <div className='container'>
         <div className='row justify-content-center'>
           <div className='col-md-10'>
-            <h1>
-              Tu Cabaña, genética y productos en nuestra plataforma de ventas
-              online
-            </h1>
+            <h1>Promovemos un campo sostenible, productivo y rentable.</h1>
             <p className='lead'>
-              Somos el Primer Mercado Online de Genética Bovina que te permitirá
-              comercializar y promocionar tu cabaña de manera fácil y segura.
+              <b>Soluciones Focseed</b>, sumamos a nuestros productos el
+              asesoramiento de nuestra área Técnica-Comercial, un combo que
+              lleva tu rinde y producción al máximo.
             </p>
             <Scroll
               to='form'
@@ -22,9 +20,9 @@ export default function Hero() {
               smooth={true}
               offset={-100}
               duration={599}
-              className='btn btn-lg btn-primary text-uppercase cta'
+              className='btn btn-lg btn-primary text-uppercase btn-cta'
             >
-              Más información
+              Ver más
             </Scroll>
           </div>
         </div>

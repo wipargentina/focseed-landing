@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function tanks() {
+export default function Tanks() {
   return (
     <section className='thanks'>
       <div className='container'>
