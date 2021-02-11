@@ -5,17 +5,21 @@
   a {
     // color: $secondary;
   }
-  h2,
+  h3,
   h5 {
     text-align: center;
   }
-  h2 {
-    color: $secondary;
-    margin-bottom: 20px;
+  h3 {
+    margin-bottom: 40px;
+    span {
+      background-color: $gray-100;
+      color: $secondary;
+    }
   }
   h5 {
     margin-bottom: 40px;
-    line-height: 1.8rem;
+    line-height: 2rem;
+    font-weight: 300;
   }
 
   button:disabled {
@@ -24,12 +28,16 @@
   }
   .form-control {
     font-weight: 600;
+    border-radius: 2px;
   }
-  .cta {
-    //padding: 12px 30px;
-    //letter-spacing: 0.04rem;
-    //color: white;
-    width: 100%;
-    font-weight: 600;
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      height: 34px;
+      opacity: 0.6;
+    }
   }
 }

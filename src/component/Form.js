@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import Logo from '../assets/static/logo-white.svg';
 
 // import axios from 'axios';
 
@@ -92,14 +93,13 @@ class Form extends Component {
         <div className='container'>
           <div className='row justify-content-center'>
             <div className='col-md-8'>
-              <h2>
-                <span>Solicitá más información</span>
-              </h2>
-              <h5>
-                Completa el siguiente formulario para conocer más sobre el
-                servicio, nuestros planes y precios.
-              </h5>
-
+              <h3>
+                <span>Contactanos</span>
+              </h3>
+              {/* <h5>
+                Dejanos tus datos en el siguiente formulario y recibirás más
+                información sobre nuestros productos y servicios.
+              </h5> */}
               <form action='' onSubmit={this.handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
@@ -202,18 +202,21 @@ class Form extends Component {
                     </div>
                   </div>
                   <div className='col-md-6'>
-                    {this.state.policy ? (
-                      <button className='btn btn-lg btn-warning text-uppercase btn-cta'>
-                        Quiero más información
-                      </button>
-                    ) : (
-                      <button
-                        className='btn btn-lg btn-warning text-uppercase btn-cta'
-                        disabled
-                      >
-                        Quiero más información
-                      </button>
-                    )}
+                    <div className='button'>
+                      {this.state.policy ? (
+                        <button className='btn btn-lg btn-warning text-uppercase btn-cta'>
+                          Enviar
+                        </button>
+                      ) : (
+                        <button
+                          className='btn btn-lg btn-warning text-uppercase btn-cta'
+                          disabled
+                        >
+                          Enviar
+                        </button>
+                      )}
+                      <img src={Logo} alt='' />
+                    </div>
                   </div>
                 </div>
               </form>

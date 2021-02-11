@@ -1,8 +1,10 @@
 .navbar {
   border-bottom: 4px solid $gray-600;
+  background-color: $gray-100;
   .navbar-brand {
+    padding: 20px 0;
     img {
-      height: 70px;
+      height: 60px;
     }
   }
 }
@@ -10,8 +12,9 @@
 @media screen and (max-width: 767px) {
   .navbar {
     .navbar-brand {
+      padding: 8px 0;
       img {
-        height: 50px;
+        height: 46px;
       }
     }
   }

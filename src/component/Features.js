@@ -5,77 +5,40 @@ export default function Features() {
   return (
     <section className='features'>
       <div className='container'>
-        <article className='row'>
-          <div className='col-md-6 order-sm-2'>
-            <img
-              className='img-fluid mb-5 mb-sm-0'
-              src='https://blog.structuralia.com/hubfs/business-team-present-professional-investor-working-new-start-up-project-finance-managers_t20_rR7ryd%20%281%29%20%281%29.jpg'
-              alt=''
-            />
-          </div>
-          <div className='col-md-6 order-sm-1'>
-            <h2>Te proponemos</h2>
-            <p>
-              Una gestión Comercial integral y Administrativa de cada operación,
-              facilitando y coordinando con vos la logística de entrega.
-            </p>
-            <p>
-              Financiación propia a los Compradores a través de medios de pago
-              electrónicos y seguros, nuestra pasarela de pagos permite la
-              acreditación del dinero de forma directa en la cuenta de la
-              Cabaña.
-            </p>
-            <Scroll
-              to='form'
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={599}
-              className='btn btn-primary cta'
-            >
-              ¿Te contamos más?
-            </Scroll>
-          </div>
-        </article>
+        <h3>
+          <span>Como lo hacemos</span>
+        </h3>
         <article className='row'>
           <div className='col-md-6'>
             <img
               className='img-fluid mb-5 mb-sm-0'
-              src='https://blog.structuralia.com/hubfs/business-team-present-professional-investor-working-new-start-up-project-finance-managers_t20_rR7ryd%20%281%29%20%281%29.jpg'
+              src='https://images.unsplash.com/photo-1594811827687-e84a67db663b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
               alt=''
             />
           </div>
           <div className='col-md-6'>
-            <h2>¿Cómo lo hacemos?</h2>
-            <ul>
-              <li>Armamos la Tienda Digital de tu Cabaña.</li>
-              <li>
-                Generamos las fichas de venta de tus Productos con datos
-                segurizados y trazables.
-              </li>
-              <li>
-                Realizamos campañas y acciones de Marketing en diferentes
-                canales digitales.
-              </li>
-              <li>
-                Ofrecemos nuestro Servicio Integral de Comercio Exterior
-                (Pedidos, Cotizaciones y Documentación)
-              </li>
-              <li>
-                Entregamos un reporte trimestral de visitas, consultas y pedidos
-                de usuarios.
-              </li>
-            </ul>
-            <Scroll
-              to='form'
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={599}
-              className='btn btn-primary cta'
-            >
-              ¿Querés saber más?
-            </Scroll>
+            <div className='content'>
+              <p>
+                <i className='fas fa-check'></i> Profesionales y próximos a tu
+                campo, tu campaña al máximo! planificá tus compras y optimizá tu
+                rinde con nuestro asesoramiento.
+              </p>
+              <p className='mb-4'>
+                <i className='fas fa-check'></i> Somos representantes de las
+                marcas líderes que ya elegís, además contamos con servicio de
+                logística para llevarte una solución a cada situación.
+              </p>
+              <Scroll
+                to='form'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={599}
+                className='btn btn-lg btn-primary btn-cta'
+              >
+                Contactá a un asesor
+              </Scroll>
+            </div>
           </div>
         </article>
       </div>

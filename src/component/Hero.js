@@ -20,9 +20,9 @@ export default function Hero() {
               smooth={true}
               offset={-100}
               duration={599}
-              className='btn btn-lg btn-primary text-uppercase btn-cta'
+              className='btn btn-primary text-uppercase btn-cta'
             >
-              Ver más
+              Más Información
             </Scroll>
           </div>
         </div>
