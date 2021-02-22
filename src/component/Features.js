@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link as Scroll } from 'react-scroll';
+import Image from '../assets/static/feature.webp';
 
 export default function Features() {
   return (
@@ -10,11 +11,7 @@ export default function Features() {
         </h3>
         <article className='row'>
           <div className='col-md-6'>
-            <img
-              className='img-fluid mb-5 mb-sm-0'
-              src='https://images.unsplash.com/photo-1594811827687-e84a67db663b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-              alt=''
-            />
+            <img className='img-fluid mb-5 mb-sm-0' src={Image} alt='' />
           </div>
           <div className='col-md-6'>
             <div className='content'>
