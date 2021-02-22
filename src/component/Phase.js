@@ -8,7 +8,7 @@ export default function Phase() {
           <div className='col-md-10'>
             <h4>
               Pensamos en <span>futuro</span>, si estás planificando tu próxima
-              campaña te invitamos a que completes tus tus datos y descargues
+              campaña te invitamos a que completes tus datos y descargues
               nuestro catálogo de semilla de alta performance.
             </h4>
             <h2>
