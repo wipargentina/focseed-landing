@@ -11,8 +11,8 @@ export default function Hero() {
             <h1>Promovemos un campo sostenible, productivo y rentable.</h1>
             <p className='lead'>
               <b>Soluciones Focseed</b>, sumamos a nuestros productos el
-              asesoramiento de nuestra área Técnica-Comercial, un combo que
-              lleva tu rinde y producción al máximo.
+              asesoramiento de nuestra área Técnica-Comercial, una combinación
+              que lleva tu rinde y producción al máximo.
             </p>
             <Scroll
               to='form'

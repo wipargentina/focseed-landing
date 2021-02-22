@@ -11,14 +11,18 @@ export default function Features() {
         </h3>
         <article className='row'>
           <div className='col-md-6'>
-            <img className='img-fluid mb-5 mb-sm-0' src={Image} alt='' />
+            <img
+              loading='lazy'
+              className='img-fluid mb-5 mb-sm-0'
+              src={Image}
+              alt=''
+            />
           </div>
           <div className='col-md-6'>
             <div className='content'>
               <p>
-                <i className='fas fa-check'></i> Profesionales y próximos a tu
-                campo, tu campaña al máximo! planificá tus compras y optimizá tu
-                rinde con nuestro asesoramiento.
+                <i className='fas fa-check'></i> Profesionales próximos a tu
+                campo, tu campaña al máximo!.
               </p>
               <p className='mb-4'>
                 <i className='fas fa-check'></i> Somos representantes de las

@@ -14,7 +14,7 @@ export default function Benefits() {
                 <i class='fas fa-6x fa-seedling'></i>
               </div>
               <div className='card-body'>
-                <h3 className='card-title'>Semillas de Alta Performance</h3>
+                <h3 className='card-title'>Semillas</h3>
               </div>
             </div>
           </div>
@@ -24,7 +24,7 @@ export default function Benefits() {
                 <i class='fas fa-6x fa-fill-drip'></i>
               </div>
               <div className='card-body'>
-                <h3 className='card-title'>Agroquímicos y Agroinsumos</h3>
+                <h3 className='card-title'>Agroquímicos</h3>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function Benefits() {
                 <i class='fas fa-6x fa-award'></i>
               </div>
               <div className='card-body'>
-                <h3 className='card-title'>Vendemos Marcas Líderes</h3>
+                <h3 className='card-title'>Marcas Líderes</h3>
               </div>
             </div>
           </div>
