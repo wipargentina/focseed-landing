@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import Logo from '../assets/static/logo-white.svg';
 
 const encode = (data) => {
@@ -43,30 +43,32 @@ class Form extends Component {
   }
 
   handleSubmit(e) {
-    // e.preventDefault();
-    // this.setState({
-    //   isSending: true
-    // });
-
-    // console.log(this.state);
+    this.setState({
+      isSending: true
+    });
 
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'landing', ...this.state })
     })
-      .then(() => alert('Success!'))
+      .then(() => {
+        this.setState({
+          isSending: false,
+          isSended: true
+        });
+      })
       .catch((error) => alert(error));
 
     e.preventDefault();
   }
 
   render() {
-    // const { redirect } = this.state;
+    const { redirect } = this.state;
 
-    // if (redirect) {
-    //   return <Redirect to='/gracias' />;
-    // }
+    if (redirect) {
+      return <Redirect to='/gracias' />;
+    }
 
     return (
       <section id='form' className='form'>
