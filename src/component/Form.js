@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import Logo from '../assets/static/logo-white.svg';
 
 const encode = (data) => {
@@ -20,8 +20,6 @@ class Form extends Component {
       location: '',
       policy: '',
       isSending: false,
-      isSended: false,
-      isError: false,
       redirect: false
     };
 
@@ -55,7 +53,7 @@ class Form extends Component {
       .then(() => {
         this.setState({
           isSending: false,
-          isSended: true
+          redirect: true
         });
       })
       .catch((error) => alert(error));
@@ -64,11 +62,11 @@ class Form extends Component {
   }
 
   render() {
-    // const { redirect } = this.state;
+    const { redirect } = this.state;
 
-    // if (redirect) {
-    //   return <Redirect to='/gracias' />;
-    // }
+    if (redirect) {
+      return <Redirect to='/gracias' />;
+    }
 
     return (
       <section id='form' className='form'>
@@ -89,7 +87,6 @@ class Form extends Component {
                         name='fname'
                         className='form-control form-control-lg'
                         onChange={this.handleChange}
-                        action='/gracias'
                       />
                     </div>
                   </div>
