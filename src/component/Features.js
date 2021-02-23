@@ -22,7 +22,8 @@ export default function Features() {
             <div className='content'>
               <p>
                 <i className='fas fa-check'></i> Profesionales próximos a tu
-                campo, tu campaña al máximo!.
+                campo, planifica tus compras y optimiza tu rinde con nuestro
+                asesoramiento.
               </p>
               <p className='mb-4'>
                 <i className='fas fa-check'></i> Somos representantes de las
