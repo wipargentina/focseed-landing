@@ -19,7 +19,7 @@ export default function Phase() {
         </div>
       </div>
       <div className='icon'>
-        <i class='fas fa-5x fa-seedling'></i>
+        <i className='fas fa-5x fa-seedling'></i>
       </div>
     </section>
   );

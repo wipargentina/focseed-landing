@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 import Logo from '../assets/static/logo-white.svg';
 
-// import axios from 'axios';
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
 
 class Form extends Component {
   constructor(props) {
@@ -39,54 +43,30 @@ class Form extends Component {
   }
 
   handleSubmit(e) {
+    // e.preventDefault();
+    // this.setState({
+    //   isSending: true
+    // });
+
+    // console.log(this.state);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'landing', ...this.state })
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
+
     e.preventDefault();
-    this.setState({
-      isSending: true,
-      redirect: true // TODO: pasar bajo despues de la response 200
-    });
-
-    // axios
-    //   .post(
-    //     'https://alfredosmondino.wipargentina.com/backend/mail.php',
-    //     this.state
-    //   )
-    //   .then((response) => {
-    //     console.log(response);
-    //     if (response.status === 200) {
-    //       this.setState({
-    //         fname: '',
-    //         lname: '',
-    //         email: '',
-    //         phone: '',
-    //         state: '',
-    //         location: '',
-    //         isSended: true,
-    //         redirect: true
-    //       });
-    //       window.location.assign(process.env.PUBLIC_URL + '/gracias');
-    //     }
-    //     if (response.status === 400) {
-    //     }
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //     this.setState({
-    //       isError: true
-    //     });
-    //   });
-
-    console.log(this.state);
-
-    // window.location.assign(process.env.PUBLIC_URL + '/gracias');
   }
 
   render() {
-    // const isSending = this.state.isSending;
-    const { redirect } = this.state;
+    // const { redirect } = this.state;
 
-    if (redirect) {
-      return <Redirect to='/gracias' />;
-    }
+    // if (redirect) {
+    //   return <Redirect to='/gracias' />;
+    // }
 
     return (
       <section id='form' className='form'>
@@ -96,11 +76,8 @@ class Form extends Component {
               <h3>
                 <span>Contactanos</span>
               </h3>
-              {/* <h5>
-                Dejanos tus datos en el siguiente formulario y recibirás más
-                información sobre nuestros productos y servicios.
-              </h5> */}
-              <form action='' onSubmit={this.handleSubmit}>
+              <form name='landing' onSubmit={this.handleSubmit}>
+                <input type='hidden' name='form-name' value='landing' />
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>

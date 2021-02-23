@@ -11,7 +11,7 @@ export default function Benefits() {
           <div className='col-md-4'>
             <div className='card'>
               <div className='card-img'>
-                <i class='fas fa-6x fa-seedling'></i>
+                <i className='fas fa-6x fa-seedling'></i>
               </div>
               <div className='card-body'>
                 <h3 className='card-title'>Semillas</h3>
@@ -21,7 +21,7 @@ export default function Benefits() {
           <div className='col-md-4'>
             <div className='card'>
               <div className='card-img'>
-                <i class='fas fa-6x fa-fill-drip'></i>
+                <i className='fas fa-6x fa-fill-drip'></i>
               </div>
               <div className='card-body'>
                 <h3 className='card-title'>Agroquímicos</h3>
@@ -31,7 +31,7 @@ export default function Benefits() {
           <div className='col-md-4'>
             <div className='card'>
               <div className='card-img'>
-                <i class='fas fa-6x fa-award'></i>
+                <i className='fas fa-6x fa-award'></i>
               </div>
               <div className='card-body'>
                 <h3 className='card-title'>Marcas Líderes</h3>
@@ -41,7 +41,7 @@ export default function Benefits() {
           <div className='col-md-4'>
             <div className='card'>
               <div className='card-img'>
-                <i class='fas fa-6x fa-truck-loading'></i>
+                <i className='fas fa-6x fa-truck-loading'></i>
               </div>
               <div className='card-body'>
                 <h3 className='card-title'>Solución Logística Integral</h3>
@@ -51,7 +51,7 @@ export default function Benefits() {
           <div className='col-md-4'>
             <div className='card mb-0'>
               <div className='card-img'>
-                <i class='fas fa-6x fa-hands-helping'></i>
+                <i className='fas fa-6x fa-hands-helping'></i>
               </div>
               <div className='card-body'>
                 <h3 className='card-title'>Asesoramiento Especializado</h3>
