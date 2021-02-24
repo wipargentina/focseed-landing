@@ -8,7 +8,7 @@ import Policy from '../pages/Policy';
 import TagManager from 'react-gtm-module';
 
 const tagManagerArgs = {
-  gtmId: 'GTM-5L7D3XR'
+  gtmId: 'GTM-TSTKTGV'
 };
 
 TagManager.initialize(tagManagerArgs);

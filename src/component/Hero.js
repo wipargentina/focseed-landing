@@ -8,7 +8,7 @@ export default function Hero() {
       <div className='container'>
         <div className='row justify-content-center'>
           <div className='col-md-10'>
-            <h1>Promovemos un campo sostenible, productivo y rentable.</h1>
+            <h1>Promovemos un campo sustentable, productivo y rentable.</h1>
             <p className='lead'>
               <b>Soluciones Focseed</b>, sumamos a nuestros productos el
               asesoramiento de nuestra área Técnica-Comercial, una combinación
