@@ -37,6 +37,16 @@ export default function Tanks() {
               <div className='fab fa-instagram mr-2'></div>
               Instagram
             </a>
+            <a
+              id='btn-linkedin'
+              href='https://www.linkedin.com/company/focseed-agro/about/'
+              rel='noopener noreferrer'
+              target='_blank'
+              className='button btn btn-outline-secondary mb-5 mx-1'
+            >
+              <div className='fab fa-linkedin mr-2'></div>
+              Instagram
+            </a>
           </div>
         </div>
       </div>
