@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Tanks() {
   return (
@@ -12,27 +11,30 @@ export default function Tanks() {
               Uno de nuestros comerciales se pondrán en contacto contigo para
               brindarte más información sobre nuestros productosy servicios.
             </p>
-            <h5 className='mb-4'>Descargá el catálogo de nuestros productos</h5>
-            <Link to='/gracias' className='btn btn-lg btn-primary mb-5'>
-              Descargar catálogo <b>¡AHORA!</b>
-            </Link>
+            <h5 className='mb-4'>
+              Si lo prefieres, podes enviarnos un Whatsapp
+            </h5>
+            <a
+              id='btn-whatsapp'
+              href='https://wa.me/+5493584203306'
+              className='button btn btn-lg btn-success mb-5'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              <div className='fab fa-whatsapp mr-2'></div>
+              +54 9 358 4203 306
+            </a>
             <h6 className='mb-3'>
               Te invitamos a que nos sigas en nuestras redes
             </h6>
             <a
-              href='/'
+              id='btn-instagram'
+              href='https://www.instagram.com/focseed_agro/'
               rel='noopener noreferrer'
               target='_blank'
-              className='btn btn-outline-secondary mb-5 mx-1'
+              className='button btn btn-outline-secondary mb-5 mx-1'
             >
-              Facebook
-            </a>
-            <a
-              href='/'
-              rel='noopener noreferrer'
-              target='_blank'
-              className='btn btn-outline-secondary mb-5 mx-1'
-            >
+              <div className='fab fa-instagram mr-2'></div>
               Instagram
             </a>
           </div>

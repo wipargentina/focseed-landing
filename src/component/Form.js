@@ -87,6 +87,7 @@ class Form extends Component {
                         name='fname'
                         className='form-control form-control-lg'
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -98,6 +99,7 @@ class Form extends Component {
                         name='lname'
                         className='form-control form-control-lg'
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -111,6 +113,7 @@ class Form extends Component {
                         name='email'
                         className='form-control form-control-lg'
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -122,6 +125,7 @@ class Form extends Component {
                         name='phone'
                         className='form-control form-control-lg'
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -135,6 +139,7 @@ class Form extends Component {
                         name='state'
                         className='form-control form-control-lg'
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -146,6 +151,7 @@ class Form extends Component {
                         name='location'
                         className='form-control form-control-lg'
                         onChange={this.handleChange}
+                        required
                       />
                     </div>
                   </div>
