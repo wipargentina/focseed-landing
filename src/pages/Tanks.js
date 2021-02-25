@@ -45,7 +45,7 @@ export default function Tanks() {
               className='button btn btn-outline-secondary mb-5 mx-1'
             >
               <div className='fab fa-linkedin mr-2'></div>
-              Instagram
+              Linkedin
             </a>
           </div>
         </div>
