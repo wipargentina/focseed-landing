@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Phase() {
+export default function Phrase() {
   return (
     <section className='phrase'>
       <div className='container'>

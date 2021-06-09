@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Policy() {
   return (
@@ -52,10 +51,6 @@ export default function Policy() {
               avanzados y los actualizamos constantemente para asegurarnos que
               no exista ningún acceso no autorizado.
             </p>
-            <br />
-            <Link to='/' className='btn btn-sm btn-primary'>
-              Volver
-            </Link>
           </div>
         </div>
       </div>

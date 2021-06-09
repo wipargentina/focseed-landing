@@ -1,5 +1,6 @@
 .navbar {
-  border-bottom: 4px solid $gray-600;
+  //border-bottom: 4px solid $gray-600;
+  box-shadow: 0 0 8px rgba($gray-400, 1);
   background-color: $gray-100;
   .navbar-brand {
     padding: 20px 0;
@@ -11,6 +12,25 @@
   }
   .navbar-nav {
     margin-left: auto;
+    .nav-item {
+      .nav-link {
+        // background-color: white;
+        color: $gray-600;
+        text-transform: uppercase;
+        letter-spacing: -0.02rem;
+        font-weight: 600;
+        margin-left: 4px;
+        cursor: pointer;
+        // padding-left: 16px;
+        // padding-right: 16px;
+        &.active {
+          // background-color: $primary;
+          // color: $primary;
+          color: #000;
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
   }
 }
 

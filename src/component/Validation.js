@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LogoBayer from '../assets/static/logo-bayer.png';
 import LogoDekalb from '../assets/static/logo-dekalb.png';
 import LogoRoundup from '../assets/static/logo-roundup.png';
@@ -52,6 +53,11 @@ export default function Validation() {
               alt='bayer'
               className='img-fluid'
             />
+          </div>
+          <div className='text-center'>
+            <Link to='/productos' className='btn btn-primary'>
+              Más información
+            </Link>
           </div>
         </div>
       </div>
