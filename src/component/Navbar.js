@@ -8,15 +8,19 @@ import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 export default function Navbar() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
-  const handleLink = () => setIsNavCollapsed(true);
+
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split('/');
 
   return (
-    <nav className='navbar navbar-expand-lg navbar-light sticky-top'>
+    <div className='navbar navbar-expand-lg navbar-light sticky-top'>
       <div className='container'>
-        <Link onClick={handleLink} className='navbar-brand mr-auto' to='/'>
+        <Link
+          onClick={handleNavCollapse}
+          className='navbar-brand mr-auto'
+          to='/'
+        >
           <img src={Logo} alt='' />
         </Link>
 
@@ -44,6 +48,7 @@ export default function Navbar() {
                   splitLocation[1] === '' ? 'nav-link active' : 'nav-link'
                 }
                 to='/'
+                onClick={handleNavCollapse}
               >
                 Inicio
               </Link>
@@ -56,6 +61,7 @@ export default function Navbar() {
                     : 'nav-link'
                 }
                 to='/sobre-nosotros'
+                onClick={handleNavCollapse}
               >
                 Sobre Nosotros
               </Link>
@@ -68,6 +74,7 @@ export default function Navbar() {
                     : 'nav-link'
                 }
                 to='/productos'
+                onClick={handleNavCollapse}
               >
                 Productos
               </Link>
@@ -86,17 +93,17 @@ export default function Navbar() {
             </li>
             <li className='nav-item'>
               <a href='/' className='nav-link'>
-                <FaFacebookSquare />
+                <FaFacebookSquare /> <span>Facebook</span>
               </a>
             </li>
             <li className='nav-item'>
               <a href='/' className='nav-link'>
-                <FaInstagram />
+                <FaInstagram /> <span>Instagram</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

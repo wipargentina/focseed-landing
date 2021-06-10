@@ -8,24 +8,27 @@
       height: 60px;
     }
   }
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    margin-right: 12px;
+  }
   .navbar-collapse {
   }
   .navbar-nav {
     margin-left: auto;
     .nav-item {
       .nav-link {
-        // background-color: white;
         color: $gray-600;
         text-transform: uppercase;
         letter-spacing: -0.02rem;
         font-weight: 600;
         margin-left: 4px;
         cursor: pointer;
-        // padding-left: 16px;
-        // padding-right: 16px;
+        span {
+          display: none;
+        }
         &.active {
-          // background-color: $primary;
-          // color: $primary;
           color: #000;
           border-bottom: 1px solid #000;
         }
@@ -40,6 +43,20 @@
       padding: 8px 0;
       img {
         height: 54px;
+      }
+    }
+    .navbar-nav {
+      margin-left: auto;
+      .nav-item {
+        .nav-link {
+          span {
+            display: inline-block;
+          }
+          &.active {
+            color: #000;
+            border-bottom: 0px;
+          }
+        }
       }
     }
   }
