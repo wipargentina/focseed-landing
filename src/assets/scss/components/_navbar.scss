@@ -1,5 +1,4 @@
 .navbar {
-  //border-bottom: 4px solid $gray-600;
   box-shadow: 0 0 8px rgba($gray-400, 1);
   background-color: $gray-100;
   .navbar-brand {
@@ -40,9 +39,9 @@
 @media screen and (max-width: 767px) {
   .navbar {
     .navbar-brand {
-      padding: 8px 0;
+      padding: 12px 0;
       img {
-        height: 54px;
+        height: 44px;
       }
     }
     .navbar-nav {
