@@ -18,7 +18,7 @@ export default function AboutUs() {
       </div>
       <div className='container'>
         <div className='row justify-content-center'>
-          <div className='col-md-8'>
+          <div className='col-md-8 bg-white'>
             <h2 className='mb-4'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
               nostrum.
