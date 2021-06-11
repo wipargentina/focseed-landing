@@ -1,0 +1,21 @@
+.products {
+  h1 {
+    margin-bottom: 30px;
+  }
+  .list-of-products {
+    text-align: center;
+    .card {
+      margin-bottom: 30px;
+      .card-image {
+        max-width: 240px;
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+      }
+      .card-body {
+        //ackground-color: orange;
+        padding: 0px 10px 30px 10px;
+      }
+    }
+  }
+}

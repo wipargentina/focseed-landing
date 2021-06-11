@@ -1,9 +1,9 @@
 import React from 'react';
-import Hero from '../component/Hero';
-import Benefits from '../component/Benefits';
-import Cta from '../component/Cta';
-import Features from '../component/Features';
-import Validation from '../component/Validation';
+import Hero from 'components/Hero';
+import Benefits from 'components/Benefits';
+import Cta from 'components/Cta';
+import Features from 'components/Features';
+import Validation from 'components/Validation';
 
 export default function Home() {
   return (

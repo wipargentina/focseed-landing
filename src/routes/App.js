@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Layout from '../component/Layout';
-import Home from '../pages/Home';
-import NotFound from '../pages/NotFound';
-import Tanks from '../pages/Tanks';
-import Policy from '../pages/Policy';
+import Layout from 'components/Layout';
+import Home from 'pages/Home';
+import NotFound from 'pages/NotFound';
+import Tanks from 'pages/Tanks';
+import Policy from 'pages/Policy';
 
 // import TagManager from 'react-gtm-module';
-import AboutUs from '../pages/AboutUs';
-import Products from '../pages/Products';
-import ScrollToTop from '../component/ScrollToTop';
+import AboutUs from 'pages/AboutUs';
+import Products from 'pages/Products';
+import ScrollToTop from 'components/ScrollToTop';
 
 // const tagManagerArgs = {
 //   gtmId: 'GTM-TSTKTGV'
