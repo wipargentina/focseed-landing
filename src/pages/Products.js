@@ -31,7 +31,7 @@ const LIST_OF_PRODUCTS = [
     link: '/'
   },
   {
-    id: 4,
+    id: 5,
     title: 'FielView',
     description: 'descripcion del producto',
     image: 'images/logo-fieldview.png',
