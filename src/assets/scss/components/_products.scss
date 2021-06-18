@@ -1,20 +1,91 @@
 .products {
+  text-align: left;
+  padding: 60px 0 10px 0;
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    text-align: left;
   }
   .list-of-products {
-    text-align: center;
-    .card {
-      margin-bottom: 30px;
-      .card-image {
-        max-width: 240px;
-        height: 200px;
-        object-fit: cover;
-        margin: auto;
+    .grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+      padding-bottom: 60px;
+      background-color: #fff;
+      padding: 60px;
+      box-shadow: 0 0 8px $gray-300;
+      .grid-image {
+        img {
+          width: 100%;
+          border-radius: 8px;
+          border: 1px solid $primary;
+        }
       }
-      .card-body {
-        //ackground-color: orange;
-        padding: 0px 10px 30px 10px;
+      .grid-content {
+        // background-color: blue;
+        h4 {
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          border-bottom: 4px solid $primary;
+          display: inline-block;
+        }
+        p {
+          margin-bottom: 40px;
+          color: $gray-800;
+        }
+        .btn {
+          text-transform: uppercase;
+          letter-spacing: 0.04rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products {
+    text-align: left;
+    padding: 30px 0;
+    h1 {
+      margin-bottom: 60px;
+      text-align: left;
+    }
+    .list-of-products {
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+        padding-bottom: 60px;
+        background-color: #fff;
+        padding: 30px;
+        box-shadow: 0 0 8px $gray-300;
+        .grid-image {
+          img {
+            width: 50%;
+            border-radius: 8px;
+            border: 1px solid $primary;
+          }
+        }
+        .grid-content {
+          h4 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 4px solid $primary;
+            display: inline-block;
+          }
+          p {
+            margin-bottom: 40px;
+            color: $gray-800;
+          }
+          .btn {
+            text-transform: uppercase;
+            letter-spacing: 0.02rem;
+            text-align: left;
+            font-size: 0.9rem;
+          }
+        }
       }
     }
   }

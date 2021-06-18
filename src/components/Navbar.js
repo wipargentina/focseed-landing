@@ -92,12 +92,22 @@ export default function Navbar() {
               </Scroll>
             </li>
             <li className='nav-item'>
-              <a href='/' className='nav-link'>
+              <a
+                href='https://www.facebook.com/FocSeed-Agro-102341568691156'
+                className='nav-link'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <FaFacebookSquare /> <span>Facebook</span>
               </a>
             </li>
             <li className='nav-item'>
-              <a href='/' className='nav-link'>
+              <a
+                href='https://www.instagram.com/focseed_agro/'
+                className='nav-link'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <FaInstagram /> <span>Instagram</span>
               </a>
             </li>

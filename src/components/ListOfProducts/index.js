@@ -7,7 +7,7 @@ export default function ListOfProducts({ products }) {
     <div className='list-of-products'>
       <div className='row justify-content-center'>
         {products.map((product) => (
-          <div key={product.id} className='col-md-6 col-lg-4'>
+          <div key={product.id} className='col-12'>
             <Product product={product} />
           </div>
         ))}

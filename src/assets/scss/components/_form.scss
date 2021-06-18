@@ -1,12 +1,13 @@
 .form {
   background-color: $secondary;
   color: white;
+  padding-bottom: 60px;
 
   a {
     // color: $secondary;
   }
   h3,
-  h5 {
+  h6 {
     text-align: center;
   }
   h3 {
@@ -16,10 +17,15 @@
       color: $secondary;
     }
   }
-  h5 {
-    margin-bottom: 40px;
+  h6 {
+    //margin-bottom: 40px;
     line-height: 2rem;
     font-weight: 300;
+    letter-spacing: 0.04rem;
+    margin-bottom: 0;
+  }
+  form {
+    margin-bottom: 60px;
   }
 
   button:disabled {

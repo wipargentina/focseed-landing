@@ -1,5 +1,6 @@
 .about {
   padding-top: 0;
+  background-color: rgba($gray-200, 0.1);
   .parallax {
     margin-bottom: 60px;
     .parallax-content {
@@ -16,6 +17,11 @@
       }
     }
   }
+  .content {
+    background-color: white;
+    padding: 60px;
+    box-shadow: 0 0 8px $gray-300;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -26,6 +32,9 @@
       .parallax-content {
         height: 300px;
       }
+    }
+    .content {
+      padding: 30px;
     }
   }
 }

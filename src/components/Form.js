@@ -76,6 +76,7 @@ class Form extends Component {
               <h3>
                 <span>Contactanos</span>
               </h3>
+
               <form name='landing' onSubmit={this.handleSubmit}>
                 <input type='hidden' name='form-name' value='landing' />
                 <div className='row'>
@@ -200,6 +201,9 @@ class Form extends Component {
                   </div>
                 </div>
               </form>
+              <h6>
+                Calle Pública 6025, X5800 Río Cuarto, Córdoba - 0358 15-420-3306
+              </h6>
             </div>
           </div>
         </div>

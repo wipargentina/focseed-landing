@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Productos Bayer",
+      "description": "Transformando la agricultura en beneficio de los productores, los consumidores y nuestro planeta. \n Los cereales de invierno se ponen en marcha. Desde una siembra eficiente apuntamos  a optimizar el uso de los insumos para el maximo aprovechamiento de la tierra cultivada.\n Bayer aporta un amplio abanico de soluciones integradas, de punta a punta del ciclo de cada cultivo. Herbicidas - Fungicidas - Insecticidas - Tratamiento de semillas (SeedGrowth), Explora la solucion total Bayer y contactanos para mas informacion",
+      "image": "images/logo-bayer.png",
+      "cta": "Consultá el catálogo completo",
+      "link": "https://cropscience.bayer.com.ar/cultivos"
+    },
+    {
+      "id": 2,
+      "title": "Productos Dekalb",
+      "description": "<b>Encontrá el híbrido ideal para tu campo</b>. <br /> Comercializamos y te asesoramos sobre el uso y aplicacion de toda la linea de semillas Dekalb, encontrarás en nuestra propuesta el hibrido ideal para tu region y clima, Nuestros productos se destacan por una Excelente performance en diferentes ambientes, otorgando mayor productividad. \n Productos de Perfil sanitario balanceado y de performance superior a los hibridos de los principales competidores",
+      "image": "images/logo-dekalb.png",
+      "cta": "Consultá el catálogo completo",
+      "link": "https://www.dekalb.com.ar/es-ar/productos-dekalb.html"
+    },
+    {
+      "id": 3,
+      "title": "Productos Asgrow",
+      "description": "<b>la recomendación más efectiva para tu campo</b> <br /> Pensamos en soja y su maximo rinde, por eso representamos Asgrow, son increibles sus modernos métodos de mejoramiento, selección y predicción genómica, permitiéndonos año a año elevar nuestros rindes. Te presentamos nuevas variedades que sorprenden, AW3920 IPRO y AW4320 IPRO, más rinde, más productividad.",
+      "image": "images/logo-asgrow.png",
+      "cta": "Consultanos",
+      "link": "https://api.whatsapp.com/send/?phone=5493584203306"
+    },
+    {
+      "id": 4,
+      "title": "Roundup",
+      "description": "Comercializamos y asesoramos sobre el correcto y eficiente uso de este destacado producto. Roundup Full® II es la formulación líquida de Roundup® superior por su performace en la superficie foliar sobre la que se lo aplique. Obtene todo su potencial en condiciones difíciles. Es ideal para el período de barbecho químico actuando en el control de malezas anuales y perennes. Ideal para su uso con aguas duras de nuestra region.",
+      "image": "images/logo-roundup.png",
+      "cta": "Consultanos",
+      "link": "https://api.whatsapp.com/send/?phone=5493584203306"
+    },
+    {
+      "id": 5,
+      "title": "FielView",
+      "description": "Integremos juntos soluciones FieldView. Todos los datos de tu campo en un solo lugar.  Interpreta problemas rápidamente y toma medidas para proteger la productividad de tus cultivos .Somos asesores y facilitadores del uso de las nuevas tecnologías aplicadas a tu campo y a tu producción, ¡Consultanos y conocé cómo sería tener tu campo integrado con agricultura digital!",
+      "image": "images/logo-fieldview.png",
+      "cta": "Iniciá tu cuenta",
+      "link": "https://climate.com/static/fv2/#/auth/login"
+    }
+  ]
+}
