@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoBayer from '../assets/static/logo-bayer.png';
 import LogoDekalb from '../assets/static/logo-dekalb.png';
-import LogoRoundup from '../assets/static/logo-roundup.png';
+// import LogoRoundup from '../assets/static/logo-roundup.png';
 import LogoFieldview from '../assets/static/logo-fieldview.png';
 import LogoAsgrow from '../assets/static/logo-asgrow.png';
 
@@ -30,14 +30,14 @@ export default function Validation() {
               className='img-fluid'
             />
           </div>
-          <div className='col-6 col-md-2'>
+          {/* <div className='col-6 col-md-2'>
             <img
               loading='lazy'
               src={LogoRoundup}
               alt='bayer'
               className='img-fluid'
             />
-          </div>
+          </div> */}
           <div className='col-6 col-md-2'>
             <img
               loading='lazy'
