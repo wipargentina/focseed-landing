@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import Logo from '../assets/static/logo-white.svg';
 
 const encode = (data) => {
@@ -18,7 +18,7 @@ class Form extends Component {
       phone: '',
       state: '',
       location: '',
-      policy: '',
+      policy: false,
       isSending: false,
       redirect: false
     };
@@ -36,7 +36,7 @@ class Form extends Component {
 
   handleOptionChange(e) {
     this.setState({
-      tags: e.target.value
+      policy: !this.state.policy
     });
   }
 
@@ -76,6 +76,7 @@ class Form extends Component {
               <h3>
                 <span>Contactanos</span>
               </h3>
+
               <form name='landing' onSubmit={this.handleSubmit}>
                 <input type='hidden' name='form-name' value='landing' />
                 <div className='row'>
@@ -158,29 +159,26 @@ class Form extends Component {
                 </div>
                 <div className='row'>
                   <div className='col-md-6 mb-4 mb-sm-0'>
-                    <div className='custom-control custom-checkbox'>
+                    <div className='form-check'>
                       <input
+                        className='form-check-input'
                         type='checkbox'
-                        className='custom-control-input'
-                        id='customCheck1'
+                        value=''
+                        id='flexCheckDefault'
                         name='policy'
-                        onChange={this.handleChange}
-                        checked={this.state.policy ? 'checked' : ''}
+                        onChange={this.handleOptionChange}
+                        checked={this.state.policy}
                       />
                       <label
-                        className='custom-control-label mb-1'
-                        htmlFor='customCheck1'
+                        className='form-check-label'
+                        htmlFor='flexCheckDefault'
                       >
                         Acepto las políticas de privacidad
                       </label>
-                      <div>
-                        <a
-                          href='/politica-de-privacidad'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                        >
+                      <div className='mt-1'>
+                        <Link to='/politica-de-privacidad'>
                           Ver políticas de privacidad
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -203,6 +201,9 @@ class Form extends Component {
                   </div>
                 </div>
               </form>
+              <h6>
+                Calle Pública 6025, X5800 Río Cuarto, Córdoba - 0358 15-420-3306
+              </h6>
             </div>
           </div>
         </div>

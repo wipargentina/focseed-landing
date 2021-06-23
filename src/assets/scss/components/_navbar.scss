@@ -1,10 +1,37 @@
 .navbar {
-  border-bottom: 4px solid $gray-600;
+  box-shadow: 0 0 8px rgba($gray-400, 1);
   background-color: $gray-100;
   .navbar-brand {
     padding: 20px 0;
     img {
-      height: 70px;
+      height: 60px;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    margin-right: 12px;
+  }
+  .navbar-collapse {
+  }
+  .navbar-nav {
+    margin-left: auto;
+    .nav-item {
+      .nav-link {
+        color: $gray-600;
+        text-transform: uppercase;
+        letter-spacing: -0.02rem;
+        font-weight: 600;
+        margin-left: 4px;
+        cursor: pointer;
+        span {
+          display: none;
+        }
+        &.active {
+          color: #000;
+          border-bottom: 1px solid #000;
+        }
+      }
     }
   }
 }
@@ -12,9 +39,23 @@
 @media screen and (max-width: 767px) {
   .navbar {
     .navbar-brand {
-      padding: 8px 0;
+      padding: 12px 0;
       img {
-        height: 54px;
+        height: 44px;
+      }
+    }
+    .navbar-nav {
+      margin-left: auto;
+      .nav-item {
+        .nav-link {
+          span {
+            display: inline-block;
+          }
+          &.active {
+            color: #000;
+            border-bottom: 0px;
+          }
+        }
       }
     }
   }

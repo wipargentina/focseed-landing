@@ -1,11 +1,9 @@
 import React from 'react';
-import Hero from '../component/Hero';
-import Benefits from '../component/Benefits';
-import Cta from '../component/Cta';
-import Features from '../component/Features';
-import Form from '../component/Form';
-import Validation from '../component/Validation';
-import Phase from '../component/Phase';
+import Hero from 'components/Hero';
+import Benefits from 'components/Benefits';
+import Cta from 'components/Cta';
+import Features from 'components/Features';
+import Validation from 'components/Validation';
 
 export default function Home() {
   return (
@@ -15,8 +13,6 @@ export default function Home() {
       <Cta />
       <Features />
       <Validation />
-      <Phase />
-      <Form />
     </>
   );
 }

@@ -1,0 +1,40 @@
+.about {
+  padding-top: 0;
+  background-color: rgba($gray-200, 0.1);
+  .parallax {
+    margin-bottom: 60px;
+    .parallax-content {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .parallax-inside {
+        background-color: white;
+        padding: 16px 32px;
+        h1 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .content {
+    background-color: white;
+    padding: 60px;
+    box-shadow: 0 0 8px $gray-300;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    padding-top: 0;
+    .parallax {
+      margin-bottom: 60px;
+      .parallax-content {
+        height: 300px;
+      }
+    }
+    .content {
+      padding: 30px;
+    }
+  }
+}
