@@ -18,7 +18,7 @@ export default function AboutUs() {
       </div>
       <div className='container'>
         <div className='row justify-content-center'>
-          <div className='col-md-8'>
+          <div className='col-md-9'>
             <div className='content'>
               <h4 className='mb-4'>
                 Desde hace más 17 de años la empresa se destaca en la región por
