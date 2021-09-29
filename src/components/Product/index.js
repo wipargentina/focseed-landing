@@ -13,6 +13,7 @@ export default function Product({ product }) {
           dangerouslySetInnerHTML={{ __html: product.description }}
         />
         <a
+          id={product.track_id}
           href={product.link}
           className='btn btn-secondary'
           target='_blank'
