@@ -8,8 +8,8 @@ export default function Tanks() {
           <div className='col-md-8'>
             <h1>Gracias por completar el formulario</h1>
             <p className='lead mb-5'>
-              Uno de nuestros comerciales se pondrán en contacto contigo para
-              brindarte más información sobre nuestros productosy servicios.
+              Uno de nuestros comerciales se pondrá en contacto contigo para
+              brindarte más información sobre nuestros productos y servicios.
             </p>
             <h5 className='mb-4'>
               Si lo prefieres, podes enviarnos un Whatsapp

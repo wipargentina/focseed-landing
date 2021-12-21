@@ -7,7 +7,7 @@ export default function Features() {
     <section className='features'>
       <div className='container'>
         <h3>
-          <span>Como lo hacemos</span>
+          <span>Cómo lo hacemos</span>
         </h3>
         <article className='row'>
           <div className='col-md-6'>
@@ -22,7 +22,7 @@ export default function Features() {
             <div className='content'>
               <p>
                 <i className='fas fa-check'></i> Profesionales próximos a tu
-                campo, planifica tus compras y optimiza tu rinde con nuestro
+                campo, planificá tus compras y optimizá tu rinde con nuestro
                 asesoramiento.
               </p>
               <p className='mb-4'>
