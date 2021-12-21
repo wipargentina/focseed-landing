@@ -8,7 +8,6 @@ export default function Products() {
       <div className='container'>
         <div className='row justify-content-center'>
           <div className='col-sm-7 col-md-10 col-xl-9'>
-            {/* <h1>Productos</h1> */}
             <ListOfProducts products={products} />
           </div>
         </div>
